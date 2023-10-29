@@ -185,7 +185,7 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-.customers ul li .cta-btn img {
+.customers ul .cta-btn img {
   width: 24px;
   height: 24px;
   padding: 1em;
@@ -204,6 +204,68 @@ h1 {
 }
 .customers ul .user-info strong {
   display: block;
+}
+
+@media only screen and (min-width: 620px) {
+  .signout {
+    display: block;
+    padding: 0.7em;
+    background-color: var(--secondary-color);
+    border-radius: 0.3em;
+  }
+  .header-right nav {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+  aside {
+    position: inherit;
+    height: auto;
+    width: auto;
+    padding: 2em;
+    margin-top: 2em;
+    transform: unset;
+    transition: unset;
+    text-align: inherit;
+    background-color: var(--secondary-color);
+    background: unset;
+    border-radius: 1em;
+  }
+  aside img {
+    background: unset;
+    cursor: unset;
+  }
+  aside nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+  aside nav ul li {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  aside nav ul li a {
+    font-size: 1.8rem;
+  }
+  aside nav ul li img {
+    display: block !important;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 3em;
+  }
+  .earnings, .customers {
+    grid-column: 1/3;
+  }
+  .extra-stats ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
