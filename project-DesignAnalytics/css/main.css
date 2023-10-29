@@ -97,13 +97,13 @@ aside {
   transform: translateX(100%);
 }
 aside a {
-  color: white;
+  color: #fff;
   font-size: 2.6rem;
 }
 aside img {
   width: 30px;
   height: 30px;
-  background: white;
+  background: #fff;
   border-radius: 0.3em;
   cursor: pointer;
 }
@@ -116,6 +116,94 @@ aside ul li {
 
 .toggle-menu {
   transform: translateX(0);
+}
+
+.sales {
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.sales, .extra-stats {
+  padding: 3.8em;
+  color: #fff;
+  border-radius: 1em;
+  margin-top: 2em;
+}
+.sales h2, .extra-stats h2 {
+  font-size: 6.4rem;
+  margin: 0;
+}
+.sales .label, .extra-stats .label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+.sales img, .extra-stats img {
+  position: absolute;
+  bottom: -45px;
+  right: -5px;
+  width: 300px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.extra-stats {
+  padding: 3.8em 0;
+}
+.extra-stats ul {
+  display: flex;
+  justify-content: space-between;
+}
+.extra-stats ul strong {
+  display: block;
+  font-size: 2.6rem;
+  margin-bottom: 0.2em;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.6rem;
+}
+
+.chart-container {
+  background-color: var(--secondary-color);
+  border-radius: 1em;
+  padding: 2.8em;
+}
+
+.customers ul {
+  display: grid;
+  margin-top: 2em;
+  color: #fff;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5em;
+}
+.customers ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.customers ul li .cta-btn img {
+  width: 24px;
+  height: 24px;
+  padding: 1em;
+  background-color: var(--secondary-color);
+  border-radius: 0.3em;
+}
+.customers ul .user-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+}
+.customers ul .user-left img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.customers ul .user-info strong {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
